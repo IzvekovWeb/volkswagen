@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Шаблон</title>
+    <title>Volkswagen Centre</title>
     <meta name="theme-color" content="#fff" />
     <meta
       name="apple-mobile-web-app-status-bar-style"
@@ -13,8 +13,9 @@
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
-    <link rel="icon" type="image/png" href="@@webRoot/img/favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="@@webRoot/img/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="@@webRoot/img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="@@webRoot/img/favicons/favicon-64x64.png" sizes="64x64">
+    <link rel="icon" type="image/png" href="@@webRoot/img/favicons/favicon-96x96.png" sizes="96x96">
     
 
     <link rel="stylesheet" href="@@webRoot/styles/main.css" />
@@ -23,16 +24,75 @@
   <body>
     <div class="wrapper">
       <div class="container">
+
         <header class="header">
-           Заголовок
+          <div class="container">
+            <div class="logo">
+              <p class="logo__title">Volkswagen Centre Almaty</p>
+              <p class="logo__subtitle">Официальный дилер Volkswagen</p>
+            </div>
+            <div class="info">
+              <div class="contacts">
+                <div class="contacts__phone">
+                  <span class="contacts__icon phone-icon"></span>
+                  <a href="tel:+77273511051" class="contacts__link">+7 (727) 351-10-51</a>
+                </div>
+                <div class="contacts__address">
+                  <span class="contacts__icon address-icon"></span>
+                  <a href="#" class="contacts__link">г. Алматы, пр. Майлина 79</a>
+                </div>
+                  
+              </div> 
+              <button class="header__button button">Обратный звонок</button> 
+            </div>
+          </div>
         </header>
         <!-- /.header --> 
 
-        <div  class="wrapper-content" >
+        <main  class="wrapper-content" >
           <div class="container">
-            <h1>Центральная часть</h1>
+            <div class="slider">
+              <div class="slide">
+                <div class="top_slides">
+                  <img class="slide__img top_slide" src="img/main_slider_1.jpg" alt="Фото Volkswagen Caddy">
+                  <img class="slide__img top_slide" src="img/main_slider_2.jpg" alt="Фото Volkswagen Caddy">
+                  <img class="slide__img top_slide" src="img/main_slider_3.jpg" alt="Фото Volkswagen Caddy">    
+                </div>
+                <div class="slide__widgets">
+                  <div class="widgets">
+                    <a href="#" class="widget widgets__sales">
+                      <span class="widget__icon sales"></span>
+                      <p class="widget__text">
+                        Акции
+                      </p>
+                    </a>
+                    <a href="#" class="widget widgets__test">
+                      <span class="widget__icon test"></span>
+                      <p class="widget__text">
+                        Тест-драйв
+                      </p>
+                    </a>
+                    <a href="#" class="widget widgets__service">
+                      <span class="widget__icon service"></span>
+                      <p class="widget__text">
+                          Сервис
+                      </p>
+                    </a>
+                    <a href="#" class="widget widgets__contacts">
+                      <span class="widget__icon contacts"></span>
+                      <p class="widget__text">
+                        Контакты
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <div class="slide__button button">Подробнее</div>
+              </div>
+              <!-- /.slide -->
+            </div>
+            <!-- /.slider -->
           </div>
-        </div>
+        </main>
         <!-- /.content -->
 
         <footer class="footer">
@@ -41,7 +101,8 @@
 
       </div>
     </div> 
-    <script src="@@webRoot/js/index.js"></script>
+    <script src="@@webRoot/js/main.js"></script>
+    <script src="@@webRoot/js/vendor.js"></script>
     <script> 
       
     </script>

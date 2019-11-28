@@ -1,0 +1,59 @@
+.slider {
+  width: 100%;
+}
+.slide {
+  position: relative;
+  &__widgets {
+    padding: 0 50px;
+  }
+  &__button {
+    position: absolute;
+    bottom: 35px;
+    left: calc(50vw - 7.5rem);
+    width: 100%;
+  }
+}
+.widgets {
+  @include flex(row, flex-end, space-between);
+  @include link_a;
+
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  
+  width: 100%;
+  max-width: 400px;
+  color: $default-color;
+  font-size: 12px;
+}
+.widget {
+  @include flex(column, center, center);
+  width: 25%;
+  &:hover {
+    .widget__icon {
+      &.sales, &.test, &.service, &.contacts {
+        background-color: rgba($color: #000000, $alpha: 0.4);
+      }
+    }
+  }
+  &__icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+
+    &.sales {
+      background: rgba($color: #000000, $alpha: 0.2) url("../../img/icons/ticket_1.png") 50% 50% no-repeat;
+    }
+    &.test {
+      background: rgba($color: #000000, $alpha: 0.2) url("../../img/icons/helm_1.png") 50% 50% no-repeat;
+    }
+    &.service {
+      background: rgba($color: #000000, $alpha: 0.2) url("../../img/icons/wrench_1.png") 50% 50% no-repeat;
+    }
+    &.contacts {
+      background: rgba($color: #000000, $alpha: 0.2) url("../../img/icons/mail_1.png") 50% 50% no-repeat;
+    }
+  }
+}
+

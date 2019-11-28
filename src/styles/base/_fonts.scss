@@ -1,48 +1,24 @@
 @font-face {
-  font-family: "HelveticaNeueCyr-Black";
+  font-family: "VWHead-Bold";
   font-display: swap;
-  src: url("../fonts/HelveticaNeueCyr-Black.woff") format("woff"),
-    url("../fonts/HelveticaNeueCyr-Black.woff2") format("woff2");
+  src: url("../fonts/VWText/VWHead-Bold.woff") format("woff"),
+    url("../fonts/VWText/VWHead-Bold.woff2") format("woff2");
 }
 @font-face {
-  font-family: "HelveticaNeueCyr-Bold";
+  font-family: "VWHead";
   font-display: swap;
-  src: url("../fonts/HelveticaNeueCyr-Bold.woff") format("woff"),
-    url("../fonts/HelveticaNeueCyr-Bold.woff2") format("woff2");
+  src: url("../fonts/VWText/VWHead.woff") format("woff"),
+    url("../fonts/VWText/VWHead.woff2") format("woff2");
 }
 @font-face {
-  font-family: "HelveticaNeueCyr-Italic";
+  font-family: "VWText-Bold";
   font-display: swap;
-  src: url("../fonts/HelveticaNeueCyr-Italic.woff") format("woff"),
-    url("../fonts/HelveticaNeueCyr-Italic.woff2") format("woff2");
+  src: url("../fonts/VWText/VWText-Bold.woff") format("woff"),
+    url("../fonts/VWText/VWText-Bold.woff2") format("woff2");
 }
 @font-face {
-  font-family: "HelveticaNeueCyr-Light";
+  font-family: "VWText";
   font-display: swap;
-  src: url("../fonts/HelveticaNeueCyr-Light.woff") format("woff"),
-    url("../fonts/HelveticaNeueCyr-Light.woff2") format("woff2");
-}
-@font-face {
-  font-family: "HelveticaNeueCyr-Mediun";
-  font-display: swap;
-  src: url("../fonts/HelveticaNeueCyr-Mediun.woff") format("woff"),
-    url("../fonts/HelveticaNeueCyr-Mediun.woff2") format("woff2");
-}
-@font-face {
-  font-family: "HelveticaNeueCyr-Roman";
-  font-display: swap;
-  src: url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff"),
-    url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff2");
-}
-@font-face {
-  font-family: "HelveticaNeueCyr-Thin";
-  font-display: swap;
-  src: url("../fonts/HelveticaNeueCyr-Thin.woff") format("woff"),
-    url("../fonts/HelveticaNeueCyr-Thin.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Helvetica-Regular";
-  font-display: swap;
-  src: url("../fonts/Helvetica-Regular.woff") format("woff"),
-    url("../fonts/Helvetica-Regular.woff2") format("woff2");
+  src: url("../fonts/VWText/VWText.woff") format("woff"),
+    url("../fonts/VWText/VWText.woff2") format("woff2");
 }

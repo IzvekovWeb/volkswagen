@@ -1,0 +1,67 @@
+.header {
+  padding: 10px 0;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+  }
+ 
+
+
+  &__button {
+    width: 7rem;
+    line-height: 1.1rem;
+    padding: 5px;
+  }
+}
+
+.logo {
+  @include flex(column, center, start);
+  &__title {
+    font-size: 1.3rem;
+    line-height: 1.563;
+    letter-spacing: 0;
+    margin-bottom: .6rem;
+  }
+  &__subtitle {
+    color: $light-color;
+  }
+}
+.info {
+  @include flex(row, center, start);
+}
+.contacts {
+  padding-right: 20px;
+  color: $primary-color;
+  &__icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  }
+  &__phone {
+    @include flex(row, flex-start, center);
+    .phone-icon {
+      background: url("../../img/icons/tel_0.png") 50% 50% no-repeat;
+      background-size: contain;
+    }
+  }
+  &__address {
+    @include flex(row, flex-start, center);
+    .address-icon {
+      background: url("../../img/icons/map_0.png") 50% 50% no-repeat;
+      background-size: contain;
+    }
+  }
+  a {
+    color: $primary-color;
+    cursor: pointer;
+
+    &:visited {
+      color: $primary-color;
+    }
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
