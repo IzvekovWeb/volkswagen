@@ -1,6 +1,11 @@
 .slider {
   width: 100%;
 }
+.top_slides { 
+  .arrows {
+    position: relative;
+  }
+}
 .slide {
   position: relative;
   &__widgets {
@@ -11,6 +16,32 @@
     bottom: 35px;
     left: calc(50vw - 7.5rem);
     width: 100%;
+  }
+  &__arrow {
+    position: absolute;
+    top: calc(50% - 40px);
+    width: 40px;
+    height: 80px;
+    background-color: $light-color;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($light-color, 10%);
+    }
+    &.arrow-prev {
+      background: $light-color url("../../img/icons/arrow-prev.png") 50% 50% no-repeat;
+      background-size: contain;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      left: 0;
+    }
+    &.arrow-next {
+      background: $light-color url("../../img/icons/arrow-next.png") 50% 50% no-repeat;
+      background-size: contain;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      right: 0;
+    }
   }
 }
 .widgets {

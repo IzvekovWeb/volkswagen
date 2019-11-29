@@ -86,13 +86,6 @@ section, .section {
     flex-direction: row;
     justify-content: space-between;
   }
-  .container {
-    display: flex;
-    justify-content: space-between;
-    
-    position: relative;
-    overflow-x: hidden;
-  }
 }
   
 .container {

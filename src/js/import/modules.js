@@ -4,12 +4,15 @@ import jquery from 'jquery';
 window.$ = window.jQuery=jquery;
 
 $('.top_slides').slick({
-  dots: true,
+  dots: false,
   infinite: true,
   speed: 300,
   slidesToShow: 1,
   slidesToScroll: 1,
-  arrows: false,
+  arrows: true,
+  autoplay: true,
+  prevArrow: $('.arrow-prev'),
+  nextArrow: $('.arrow-next'),
   responsive: [
     {
       breakpoint: 1024,
