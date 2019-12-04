@@ -1,0 +1,41 @@
+.news {
+  @include flex(column, center, start);
+  text-align: center;
+  background-color: rgb(243, 245, 246);
+  &__title {
+    width: 100%;
+    margin: 30px 0;
+  }
+  &__wrapper {
+    @include flex(row, space-around, start);
+    flex-wrap: wrap;
+    padding: 0 60px;
+  }
+  &__block {
+    @include flex(column, space-between, start);
+    max-width: 30%;
+    min-height: 580px;
+  }
+  &__img {
+    max-height: 230px;
+    overflow: hidden;
+  }
+  &__subtitle {
+    margin-top: 20px;
+  }
+  &__text {
+    margin-top: 15px;
+    font-size: 1.2rem;
+  }
+  &__button {
+    min-width: 200px;
+    min-height: 43px;
+    margin: 20px auto 0 auto;
+    &-block {
+      width: 100%;
+      .news__button {
+        float: bottom;
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+.sales {
+  .slick-center {
+    .slide__info-wrapper {
+      display: flex;
+    }
+  }
+  .arrows {
+    position: absolute;
+    top: 0;
+    right: 32%;
+    width: 36%;
+    min-height: 238px;
+  }
+  .slide {
+    @include flex(column, center, center);
+    text-align: center;
+    width: 33%;
+    &__img-wrapper {
+      min-height: 290px;
+    }
+
+    &__info-wrapper {
+      @include flex(column, center, center);
+      display: none;
+      transition: all 0.2s;
+      transition-delay: 0.2s;
+    }
+    &__subtitle {
+      margin: 20px 0;
+    }
+    &__text {
+      margin: 20px 0;
+      font-size: 1.4rem;
+    }
+    &__button {
+      display: block;
+      position: unset;
+      width: 200px;
+      height: 42px;
+      margin: 10px auto 0 auto;
+    }
+  }
+ 
+  &__arrow {
+    position: absolute;
+    top: calc(50% - 30px);
+    width: 60px;
+    height: 60px;
+    background-color: $light-color;
+    cursor: pointer;
+
+    &:hover {
+      filter: grayscale(100%);
+    }
+    &.arrow-prev {
+      background: url("../../img/icons/arrow-prev-b.png") 50% 50% no-repeat;
+      background-size: contain;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      left: 0;
+    }
+    &.arrow-next {
+      background: url("../../img/icons/arrow-next-b.png") 50% 50% no-repeat;
+      background-size: contain;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      right: 0;
+    }
+  }
+  &__title {
+    margin: 40px 0 60px 0;
+  }
+  &__slider {
+    position: relative;
+    /* the slides */
+    .slick-slide {
+      margin-left: 70px;
+      img {
+        width: 100%;
+      }
+    }
+
+    /* the parent */
+    .slick-list {
+      margin-left: -70px;
+    }
+  }
+}

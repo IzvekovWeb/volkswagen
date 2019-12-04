@@ -1,5 +1,6 @@
 .button {
   display: inline-block;
+  min-width: 5rem;
   max-width: 15rem;
   background: $primary-color;
   color: $default-color;
@@ -28,7 +29,11 @@
   // primiry btn
   &.button--reverse {
     color: $primary-color;
-    border: 1px solid $primary-color;
+    border: 1px solid $neutral-placeholder;
     background-color: $default-color;
+    &:hover {
+      color: $default-color;
+      background-color: $secondary-color;
+    }
   }
 }

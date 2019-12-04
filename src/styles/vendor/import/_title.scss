@@ -1,6 +1,12 @@
 .title {
-  color: $mainFontColor;
+  color: $secondFont;
   font-size: 45px;
   font-weight: 700;
   text-align: center;
 }
+.subtitle {
+  font-family: $boldFont;
+  font-size: 2rem;
+  font-weight: 900;
+}
+

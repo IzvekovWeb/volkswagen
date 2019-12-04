@@ -23,7 +23,7 @@ body {
   font-weight: $mainFontWeight;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f7f7f7;
+  background-color: #ffffff;
 }
   
 *, *:before, *:after {
@@ -103,4 +103,101 @@ section, .section {
   @media screen and (max-width: $phoneWidth) {
     max-width: $smPhoneWidth;
   }
-} 
+}
+
+.arrow-link {
+  @include flex(row, center, center);
+  margin-top: 50px;
+  text-align: center;
+  color: $primary-color;
+  font-size: 1.3rem;
+  &:hover {
+    color: darken($primary-color, 10%);
+    .arrow-link__arrow {
+      filter: grayscale(40%);
+    }
+  }
+  &:visited {
+    color: $primary-color;
+    &:hover {
+      color: darken($primary-color, 10%);
+    }
+  }
+  &__arrow {
+    display: inline-block;
+    margin-right: 10px;
+    background: url("../../img/icons/link_arrow.png") 50% 50% no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
+//-------------------DOTS-------------------------
+
+.my-dots {
+  display: block;
+  position: absolute;
+  bottom: -45px;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.my-dots li {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.my-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 0;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  outline: none;
+  background: transparent;
+}
+
+.my-dots li button:hover, .my-dots li button:focus {
+  outline: none;
+}
+
+.my-dots li button:hover:before, .my-dots li button:focus:before {
+  opacity: 1;
+}
+
+.my-dots li button:before {
+  //content: url("https://upload.wikimedia.org/wikipedia/commons/b/b7/Rule_Segment_-_Circle_open_-_20px.svg");
+  // font-family: "slick";
+  content: "";
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  border-radius: 5px;
+  background-color: $neutral-primary;
+  top: 0;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.my-dots li.slick-active button:before {
+  // opacity: .75;
+  background-color: $primary-color;
+}
+//------------------------------------------------

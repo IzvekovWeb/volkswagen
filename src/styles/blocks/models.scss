@@ -5,8 +5,10 @@
 .models__slide {
   &.slide {
     @include flex(column, center, center);
+    margin: auto;
     .slide__img {
       max-width: 300px;
+      margin: auto;
     }
     .slide__text {
       margin-top: 6px;
@@ -17,4 +19,10 @@
       text-align: center;
     }
   }
+}
+
+.models__link {
+  @include flex(row, center, center);
+  margin-top: 50px;
+  text-align: center;
 }

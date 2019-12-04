@@ -1,0 +1,19 @@
+.properties__wrapper {
+  @include flex(column, start, center);
+  text-align: center;
+}
+.properties__bloks-wrapper {
+  @include flex(row, space-around, start);
+}
+.properties__blok {
+  @include flex(column, start, center);
+}
+.properties__img {
+  max-width: 30%;
+}
+.properties__subtitle {
+  margin-top: 30px;
+}
+.properties__link {
+  margin-top: 30px;
+}
