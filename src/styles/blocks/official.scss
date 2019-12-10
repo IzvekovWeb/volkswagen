@@ -1,0 +1,28 @@
+.official-wrapper {
+  @include flex(column, start, center);
+  text-align: center;
+}
+.official-slider {
+  max-width: 500px;
+  margin-bottom: 40px;
+  &__link {
+    display: block;
+    max-width: 450px;
+  }
+  &__img {
+    max-width: 100%;
+  }
+}
+.official__text {
+  margin-top: 30px;
+  font-size: 1.1rem;
+  font-family: $boldFont;
+}
+.official__subtitle {
+  margin-top: 10px;
+}
+
+.official__button {
+  margin-top: 40px;
+  width: 100%;
+}
