@@ -1,3 +1,6 @@
+.callback {
+  padding-bottom: 0;
+}
 .callback-wrapper {
   @include flex(row, space-around, flex-start);
   background-color: $primary-color;
@@ -18,3 +21,7 @@
   width: 100%;
   max-width: 200px;
 }
+
+
+
+
